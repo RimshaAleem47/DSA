@@ -239,6 +239,9 @@ int main()
 		case 'S' :
 		obj1.show();	
 		break;
+		default :
+			cout<<"\n"<<"YOU ENTER WRONG LETTER...!  "<<"\n";
+			
 	}
 	cout<<"\n"<<"IF YOU WANT TO CONTINUE PRESS Y AND IF YOU WANT TO EXIT PRESS E...!  "<<"\n";
 	cha=getche();
