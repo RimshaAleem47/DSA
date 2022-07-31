@@ -1,5 +1,3 @@
-
-
 ///Make a Linked List as per the class instructions.
 //constructor / parameterized constructor
 //isEmpty
@@ -148,12 +146,14 @@ class link
 		void empty()
 		{
 			p=head;
-			while(p->link!=NULL)
+			if(p->data== NULL)
 			{
-				p=p->link;
+				cout<<"\n"<<"THE LIST IS EMPTY"<<"\n";
 			}
-			
-			cout<<"\n"<<"THE LINK PART OF "<<p->data<<" LIST IS EMPTY."<<"\n";
+			else
+			{
+				cout<<"\n"<<"THE LIST IS NOT EMPTY"<<"\n";
+			}
 			
 		}
 		void show()
@@ -202,7 +202,7 @@ int main()
 	cout<<"\n"<<"ENTER LETTER 'P' IN CAPITAL TO GET FIRST ELEMENT  FROM LIST...!"<<"\n" ;
 	cout<<"\n"<<"ENTER LETTER 'Q' IN CAPITAL TO GET LAST ELEMENT  FROM LIST...!"<<"\n" ;
 	cout<<"\n"<<"ENTER LETTER 'N' IN CAPITAL TO SHOW LENGTH OF LINKLIST...! "<<"\n";
-	cout<<"\n"<<"ENTER LETTER 'M' IN CAPITAL TO CHECK WHICH LINK PART OF LINKLIST IS EMPTY...! "<<"\n";
+	cout<<"\n"<<"ENTER LETTER 'M' IN CAPITAL TO CHECK WEATHER THE LINKLIST IS EMPTY OR NOT...! "<<"\n";
 	cout<<"\n"<<"ENTER LETTER 'S' IN CAPITAL TO SHOW ALL LINKLIST...! "<<"\n";
 	
 	
